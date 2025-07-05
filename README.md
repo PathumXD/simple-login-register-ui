@@ -11,12 +11,13 @@ Clean design, mobile-friendly, and easy to customize for personal or professiona
 
 ## Project Structure
 
+```
 ├── index.html
 ├── css/
 │ └── style.css
 └── js/
 └── script.js
-
+```
 
 ## How to Use
 
