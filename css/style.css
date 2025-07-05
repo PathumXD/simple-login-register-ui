@@ -1,0 +1,95 @@
+  /* Project: simple-login-register-ui
+  Author: PathumXD
+  GitHub: https://github.com/PathumXD/simple-login-register-ui */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #0B2447;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px 20px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #19376D;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #A5D7E8;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+}
+
+.input-field:focus {
+  border-color: #576CBC;
+  outline: none;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 12px;
+  background-color: #576CBC;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #19376D;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.small-text {
+  font-size: 13px;
+}
+
+a {
+  color: #576CBC;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 500px) {
+  .card {
+    margin: 0 10px;
+  }
+}

@@ -1,0 +1,56 @@
+<!--
+  Project: simple-login-register-ui
+  Author: PathumXD
+  GitHub: https://github.com/PathumXD/simple-login-register-ui
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login & Register</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Login Form -->
+  <div class="card" id="loginForm">
+    <h2>Welcome Back!</h2>
+    <input type="email" class="input-field" placeholder="Email Address" />
+    <input type="password" class="input-field" placeholder="Password" />
+    <div class="flex-between">
+      <label><input type="checkbox" /> Save Password</label>
+      <a onclick="showForgot()">Forgot Password?</a>
+    </div>
+    <button class="btn-primary">Login Account</button>
+    <p class="text-center small-text">Don't have an account? <a onclick="toggleForms()">Create Account</a></p>
+  </div>
+
+  <!-- Register Form -->
+  <div class="card" id="registerForm" style="display: none;">
+    <h2>Join Us</h2>
+    <input type="text" class="input-field" placeholder="Full Name" />
+    <input type="email" class="input-field" placeholder="Email Address" />
+    <input type="password" class="input-field" placeholder="Password" />
+    <input type="password" class="input-field" placeholder="Confirm Password" />
+    <div class="flex-between">
+      <label><input type="checkbox" /> Terms & Agreements</label>
+    </div>
+    <button class="btn-primary">Create Account</button>
+    <p class="text-center small-text">Already have an account? <a onclick="toggleForms()">Back to Login</a></p>
+  </div>
+
+  <!-- Forgot Password Form -->
+  <div class="card" id="forgotForm" style="display: none;">
+    <h2>Forgot Password</h2>
+    <p class="text-center small-text" style="margin-bottom: 15px;">Enter your email to reset your password.</p>
+    <input type="email" class="input-field" placeholder="Email Address" />
+    <button class="btn-primary">Send Reset Link</button>
+    <p class="text-center small-text">Remembered your password? <a onclick="showLogin()">Back to Login</a></p>
+  </div>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
